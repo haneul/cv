@@ -1,0 +1,252 @@
+\documentclass[margin,line]{res}
+\usepackage{hyperref}
+\pagestyle{plain}
+
+    %%%%%%%%%%%%%%%%%%2%%%%%%%%%%%
+    \oddsidemargin  -.2in
+    \evensidemargin -.2in
+    \textwidth      5.5in   %letter:6.5 A4: 6.0
+    \textheight     9.0in
+    \headheight     0.0in
+    \topmargin      0.0in
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+\newenvironment{list3}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.3in}}}{\end{list}}
+
+\makeatletter
+\renewenvironment{thebibliography}[1]
+     {\list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+\begin{document}
+
+\name{Seungyeop Han \vspace*{.1in}}
+
+\begin{resume}
+
+%%%%%%%%%%%%%%%%%%%%%%%% Personal %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\sc Contact Information}
+\vspace{.05in}
+
+\begin{tabular}{@{}p{3in}p{3in}}
+Ph.D Student @ \textbf{CSE.UW}                & Computer Science \& Engineering,\\
+{\it Email:} syhan@cs.washington.edu		  &University of Washington    \\
+{\it Web:} \url{http://cs.washington.edu/homes/syhan}	  & Box 352350 Seattle WA 98195-2350   \\
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Interests %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\sc Research Interests}
+%Distributed Systems, Computer Networking, Peer-to-peer Computing, \\ Operating Systems, World Wide Web, Privacy, Security
+My research interests are primarily in networked systems. 
+It spans topics like computer networking, operating systems, mobile services, privacy and security. 
+Recently, I have worked on studying and providing solutions for smartphone privacy issues~\cite{spsm12,nsdi12,ccs2011}, 
+and creating a new Internet architecture with censorship resistant property~\cite{hotnets11}.
+Prior to studying in UW, I participated in various research projects, such as GPU-accelerated SSL~\cite{nsdi11}, 
+and online social network analysis~\cite{www07}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Education %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\sc Education}
+University of Washington, WA \\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Ph.D. in Computer Science and Engineering\hfill{\it Sep. 2010 -- }
+\item[] (\textit{Advisor}: David Wetherall, Arvind Krishnamurthy)
+\item[] M.S. in Computer Science and Engineering (GPA 3.88/4.0)\hfill{\it Mar. 2012}
+\item[] \textit{Quals Project}: Tracking the Trackers: A Study of Third-Party Tracking by Mobile Apps in the Wild (\textit{Advisor}: David Wetherall, Jaeyeon Jung) 
+\end{list1}
+
+
+KAIST, Korea  \\
+\vspace*{-.1in}
+\begin{list1}
+\item[] M.S. in Division of Computer Science (GPA 4.15/4.3) \hfill{\it Feb. 2007}
+\item[] \textit{Thesis}: Analysis of Blog Spams and Collaborative Blog Spam Filtering Using Adaptive Percolation Search (\textit{Advisor}: Sue B. Moon)
+\item[] 
+\item[] B.S. in Division of Computer Science with a minor in Dept.~of Mathematics \hfill{\it Feb. 2005}
+\item[] \textit{Summa Cum Laude}, (GPA 3.92/4.3)
+\item[] Studied Summer 2003 at University of California, Berkeley. 
+\end{list1}
+
+%University of California at Berkeley, CA, USA \hfill {\it Jun. 2003 -- Aug. 2003}\\
+%\vspace*{-.1in}
+%\begin{list1}
+%\item[] GPA 3.85/4.0
+%\item[] Completed courses in summer session: Machine Structure, Discrete Mathematics
+%\end{list1}
+
+%Gyeonggi Science High School, Korea \hfill{\it Mar. 1999 -- Feb. 2001}\\
+%\vspace*{-.1in}
+%\begin{list1}
+%\item[] Graduated one year early 
+%\end{list1} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%   Publications   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\sc Publications}
+\nocite{*}
+\bibliographystyle{plainyr-rev}
+\bibliography{mypapers}
+
+\section{\sc Teaching Expereiences}
+Teaching Assistant, University of Washington \hfill{\it Sep. 2010 -- Dec. 2010} \\
+Network Systems (CSEP561)
+
+Teaching Assistant, KAIST \hfill{\it Mar. 2005 -- Feb. 2007} \\
+Introduction to Computer Networking (CS441), Special Topics in Computer Science - Wireless and Mobile Computing (CS492), Introduction to Computer Programming (CS101)
+%{\em Research Assistant} \hfill {\bf August, 2003 -- }\\
+%{\em Graduate Student} \hfill {\sc March, 2005 -- present}\\
+%Includes current M.S. research, courseworks, and managing projects.
+%A short summary of my research activities at KAIST and elsewhere begins on page 3.
+%{\em Teaching Assistant} \hfill {\sc Mar. 2005 -- Feb. 2007}\\
+%Worked as a TA for three courses, Introduction to Computer Networking, Special Topics in Computer Science - Wireless and Mobile Computing, and Introduction to Computer Programming. Assisted in design of homework assignments and lab experiments; graded homework and exams; and provided office hours. First two courses were taught in English.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% PROFESSIONAL EXPERIENCE %%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\sc Work Experiences}
+{\bf Microsoft Research}, Redmond, WA \\
+{\em Contracted Researcher} via Nytec Inc. \hfill {\it Oct.2012 -- present} \\
+{\em Research Intern} \hfill {\it Jun. 2012 -- Sep. 2012} \\
+Worked on NLify project, which enables third party smartphone applications to
+interact users with spoken natural language. I designed and implemented
+development supporting tools well integrated with Visual Studio, and workflow
+including specifying spoken language usages, amplifying them, and converting
+into WindowsPhone application control.
+
+{\bf Forward Ventures LLC.}, Seoul, Korea \\
+{\em Software Dev Lead} \hfill {\it Aug. 2010 -- Sep. 2010} \\
+Worked on architecting and devloping a social commerce website,
+\url{http://coupang.com}. Until it launched, I worked as the only developer, thus managed 
+the whole system architecture and server settings.
+
+{\bf NHN Corp.}, Korea \\
+{\em Software Engineer, Open UI Tech. Team} \hfill {\it Sep. 2009 -- Aug. 2010}\\
+Developed an open source web site builder, XpressEngine.
+
+{\em Software Engineer, P2P Platform Development Team} \hfill {\it Feb. 2007 -- Sep. 2009}\\
+Developed P2P platform libraries. %, for both parts of linux servers and windows clients.
+The main component of the libraries was a P2P connector which enables applications to establish reliable connections between peers. 
+In addition, participated in designing systems and algorithms for optimal peer
+selection, P2P livecast and VoD service.\\\\
+
+{\bf Microsoft Research Cambridge}, UK \\
+{\em Research Intern} \hfill {\it Sep. 2006 -- Dec. 2006} \\
+Designed and evaluated spatial sampling algorithms for end-system network monitoring in enterprise network by exploiting existence of heavy-hitters. 
+%A short summary of my research activities at KAIST and elsewhere begins on page 3.
+
+%{\em System Administrator} \hfill {\sc Mar. 2005 -- Feb. 2007}\\
+%Set up and administrated linux servers including main server for HTTP, mail, samba, and analysis servers in my lab. 
+
+%{\bf KISTI} \hfill{\bf Daejeon, Korea}\\
+%{\em Part Time Programmer} \hfill {\sc Jul. 2005 -- Aug. 2005}\\
+%As a part-time programmer, I had working experience at Grid Research Team of KISTI Super Computing Center.
+%I helped developing Data Grid system with Python and Java.
+
+{\bf Tmax Soft}, Korea\\
+{\em Summer Intern} \hfill {\sc Jul. 2004 -- Aug. 2004}\\
+Developed XML Schema Navigator (in Java), capable of dynamic XML node creation.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  TALKS   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Honors and Awards %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\sc Honors and Awards} 
+\begin{list2}
+\item{Best Poster Award~\cite{sigcomm10}, SIGCOMM, 2010}
+\item{KFAS scholarship for study abroad, Korea Foundation for Advanced Studies, 2010 -- present}
+\item{Outstanding master's thesis, CS division, KAIST, 2007}
+\item{\textit{Summa Cum Laude}, KAIST, 2005}
+\item{Honorable Mention in commendation for the outstanding paper~\cite{icat04}, ICAT, 2004}
+%\item{Tuition Waived - Scholarship by Government, KAIST, 2001--2004(BS), 2005--2006(MS) }
+\item{Kim, Younghan Global Leader Scholarship, KAIST, 2002--2004}
+\end{list2}
+
+
+
+%\vspace*{-2.5mm}
+%\vspace*{-.1in}
+
+%\section{\sc Skills}
+%{\bf Programming Langugages} : C/C++/C\#/Objective-C, JAVA, PHP, Python, MATLAB\\
+%{\bf Operating Systems} : Unix/Linux, Windows, MacOS\\
+%{\bf Spoken Languages} : 
+%\begin{list1}
+%\item[]{Korean : Native}
+%\item[]{English : Fluent, TOEFL IBT 108/120 (Jun.~2009)}
+%\end{list1}
+
+\section{\sc Services and Other Activities}
+\begin{list2}
+\item{Commiter, XpressEngine, 2007--2010 }
+%\begin{list1}
+%\item[] {I have contributed to many parts of XE project, which is the most popular PHP-based website building framework in South Korea.}
+%\end{list1}
+\item{Class representative for the class of 2005, Division of Computer Science, 2004}\\
+%\item{Administrator of a telnet-based BBS system, BAR, in KAIST, 2003--2004}
+%\begin{list1}
+%\item[]{BAR is a BBS system with more than 1000 users at KAIST{}. I worked as an administrtor of BAR and 
+%developed new features.}\\
+%\end{list1}
+%\item{Member of a linux club, Kaist Linuxers (KALI), at KAIST, 2003--2004}
+%\begin{list1}
+%\item[]{As a member of KALI, I provided Linux seminars and participated to devlope several systems on Linux. In particular, 
+%I developed a P2P audio streaming player, Kali Audio Streaming Service in 2004, and exhibited it at 
+%the first IT-Festival sponsored by Samsung SDS{}.}\\
+%\end{list1}
+%\item{Member of a pop chorus club, MUSE, at KAIST, 2001--2004}
+%\begin{list1}
+%\item[]{KAIST MUSE is a pop-chorus club, which has more than sixty members. It puts on two performances a year in May and November. I served as an organization chair whose tasks include securing a concert hall and audio/video systems; and getting sponsorships; and printing and distributing posters and brochures.}
+%\end{list1}
+\end{list2}
+%\vspace{2in}
+\section{\sc References}
+\vspace{.05in}
+
+\begin{tabular}{@{}p{3in}p{3in}}
+{\bf Prof. David Wetherall} & {\bf Dr. Jaeyeon Jung} \\
+{\em Computer Science and Engineering} & \\
+University of Washington & Microsoft Research \\
+{djw@cs.washington.edu} & {jjung@microsoft.com} \\
+\\
+{\bf Prof. Arvind Krishnamurthy} & {\bf Dr. Matthai Philipose} \\
+{\em Computer Science and Engineering} &  \\
+University of Washington & Microsoft Research \\
+{arvind@cs.washington.edu} & {matthaip@microsoft.com}
+
+\end{tabular}
+
+%%% LIST UP WHAT DID YOU DO
+\end{resume}
+
+\end{document}
+
