@@ -1,5 +1,6 @@
 \documentclass[margin,line]{res}
 \usepackage{hyperref}
+\usepackage{comment}
 \pagestyle{plain}
 
     %%%%%%%%%%%%%%%%%%2%%%%%%%%%%%
@@ -68,11 +69,17 @@ Ph.D Student @ \textbf{CSE.UW}                & Computer Science \& Engineering,
 %%%%%%%%%%%%%%%%%%%%%%%%%% Interests %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\sc Research Interests}
 %Distributed Systems, Computer Networking, Peer-to-peer Computing, \\ Operating Systems, World Wide Web, Privacy, Security
-My research interests are primarily in networked systems. 
-It spans topics like computer networking, operating systems, mobile services, privacy and security. 
-Recently, I have worked on studying and providing solutions for smartphone privacy issues~\cite{spsm12,nsdi12,ccs2011}, 
-and creating a new Internet architecture with censorship resistant property~\cite{hotnets11}.
-Prior to studying in UW, I participated in various research projects, such as GPU-accelerated SSL~\cite{nsdi11}, 
+My research interests are primarily in mobile computing and networked systems. 
+It spans topics like computer networking, mobile systems, operating systems, privacy and security. 
+Recently, I have worked on various project in mobile systems: 
+system for continuous high datarate perception~\cite{hotos13}, 
+natural language interface for third-party mobile applications~\cite{ubicomp13, hotmobile13}, 
+and studying and providing solutions for smartphone privacy
+issues~\cite{spsm12,nsdi12,ccs2011}).  
+Also I have participated in projects to create new Internet architectures for
+finer grained identity control in IPv6~\cite{sigcomm13} and censorship
+resistant property~\cite{hotnets11}.  Prior to studying in UW, I participated
+in various research projects, such as GPU-accelerated SSL~\cite{nsdi11}, 
 and online social network analysis~\cite{www07}.
 
 
@@ -81,9 +88,9 @@ and online social network analysis~\cite{www07}.
 University of Washington, WA \\
 \vspace*{-.1in}
 \begin{list1}
-\item[] Ph.D. in Computer Science and Engineering\hfill{\it Sep. 2010 -- }
-\item[] (\textit{Advisor}: David Wetherall, Arvind Krishnamurthy)
-\item[] M.S. in Computer Science and Engineering (GPA 3.88/4.0)\hfill{\it Mar. 2012}
+\item[] Ph.D. in Computer Science and Engineering (GPA 3.85/4.0) \hfill{\it Sep. 2010 -- }
+%\item[] (\textit{Advisor}: David Wetherall, Arvind Krishnamurthy)
+\item[] M.S. in Computer Science and Engineering\hfill{\it Mar. 2012}
 \item[] \textit{Quals Project}: Tracking the Trackers: A Study of Third-Party Tracking by Mobile Apps in the Wild (\textit{Advisor}: David Wetherall, Jaeyeon Jung) 
 \end{list1}
 
@@ -118,6 +125,36 @@ KAIST, Korea  \\
 \nocite{*}
 \bibliographystyle{plainyr-rev}
 \bibliography{mypapers}
+\section{\sc Working Papers}
+\begin{thebibliography}{10}
+%\bibitem{taintdroid}
+%William Enck, Peter Gilbert, \textbf{Seungyeop Han}, Vasant Tendulkar, Byung-Gon Chun,
+%  Landon~P. Cox, Jaeyeon Jung, Patrick McDaniel, and Anmol~N. Sheth.
+%\newblock Taintdroid: An information-flow tracking system for realtime privacy
+%  monitoring on smartphones.
+%\newblock Under Submission.
+\bibitem{toip2}
+Haewoon Kwak, \textbf{Seungyeop Han}
+\newblock So Many Bad Guys, So Little Time: Exploring Crowdsourcing Frameworks for Combating Toxic Players in Online Games.
+\newblock Under Submission.
+
+\bibitem{toip2}
+Vincent Liu, \textbf{Seungyeop Han}, Adam Lerner, Arvind Krishnamurthy, Thomas Anderson. 
+\newblock Internet Privacy by Construction. 
+\newblock Tech Report UW-CSE-12-09-04, 2012.
+
+
+\bibitem{applog}
+\textbf{Seungyeop Han}, Jaeyeon Jung, and David Wetherall.
+\newblock A study of third-party tracking by mobile apps in the wild.
+\newblock Tech Report UW-CSE-12-03-01, 2012.
+
+\end{thebibliography}
+
+\section{\sc Patents}
+Young Su Ko, \textbf{Seungyeop Han}, Jung Woo Seo. \\
+System and Method for Collecting Document. \\
+US Patent Application \#20110320427, Patent Pending.
 
 \section{\sc Teaching Expereiences}
 Teaching Assistant, University of Washington \hfill{\it Sep. 2010 -- Dec. 2010} \\
@@ -135,20 +172,23 @@ Introduction to Computer Networking (CS441), Special Topics in Computer Science 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% PROFESSIONAL EXPERIENCE %%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\sc Work Experiences}
+{\bf Telefonica I+D}, Barcelona, Spain \\
+{\em Research Intern} \hfill {\it Apr. 2013 -- Jul. 2013}
+
 {\bf Microsoft Research}, Redmond, WA \\
-{\em Contracted Researcher} via Nytec Inc. \hfill {\it Oct.2012 -- present} \\
+{\em Contracted Researcher} via Nytec Inc. \hfill {\it Oct. 2012 -- Mar. 2013} \\
 {\em Research Intern} \hfill {\it Jun. 2012 -- Sep. 2012} \\
-Worked on NLify project, which enables third party smartphone applications to
-interact users with spoken natural language. I designed and implemented
+Have worked on NLify project, which enables third party smartphone applications to
+interact users via spoken natural language. I designed and implemented
 development supporting tools well integrated with Visual Studio, and workflow
 including specifying spoken language usages, amplifying them, and converting
-into WindowsPhone application control.
+into Windows Phone application control.
 
 {\bf Forward Ventures LLC.}, Seoul, Korea \\
 {\em Software Dev Lead} \hfill {\it Aug. 2010 -- Sep. 2010} \\
-Worked on architecting and devloping a social commerce website,
-\url{http://coupang.com}. Until it launched, I worked as the only developer, thus managed 
-the whole system architecture and server settings.
+Architected and developed a social commerce website,
+\url{http://coupang.com}. Until the launching, I was the only developer, thus managed 
+the whole system.
 
 {\bf NHN Corp.}, Korea \\
 {\em Software Engineer, Open UI Tech. Team} \hfill {\it Sep. 2009 -- Aug. 2010}\\
@@ -156,9 +196,9 @@ Developed an open source web site builder, XpressEngine.
 
 {\em Software Engineer, P2P Platform Development Team} \hfill {\it Feb. 2007 -- Sep. 2009}\\
 Developed P2P platform libraries. %, for both parts of linux servers and windows clients.
-The main component of the libraries was a P2P connector which enables applications to establish reliable connections between peers. 
-In addition, participated in designing systems and algorithms for optimal peer
-selection, P2P livecast and VoD service.\\\\
+The main component of the libraries was a P2P connector enabling applications to establish reliable connections between peers. 
+In addition, I participated in designing systems and algorithms for optimal peer
+selection, P2P livecast and VoD service.
 
 {\bf Microsoft Research Cambridge}, UK \\
 {\em Research Intern} \hfill {\it Sep. 2006 -- Dec. 2006} \\
@@ -183,7 +223,7 @@ Developed XML Schema Navigator (in Java), capable of dynamic XML node creation.\
 \section{\sc Honors and Awards} 
 \begin{list2}
 \item{Best Poster Award~\cite{sigcomm10}, SIGCOMM, 2010}
-\item{KFAS scholarship for study abroad, Korea Foundation for Advanced Studies, 2010 -- present}
+\item{Doctoral Study Abroad Scholarship, The Korea Foundation for Advanced Studies, Sep. 2010 -- Jun. 2013 }
 \item{Outstanding master's thesis, CS division, KAIST, 2007}
 \item{\textit{Summa Cum Laude}, KAIST, 2005}
 \item{Honorable Mention in commendation for the outstanding paper~\cite{icat04}, ICAT, 2004}
@@ -205,9 +245,15 @@ Developed XML Schema Navigator (in Java), capable of dynamic XML node creation.\
 %\item[]{English : Fluent, TOEFL IBT 108/120 (Jun.~2009)}
 %\end{list1}
 
-\section{\sc Services and Other Activities}
+\section{\sc Services}
 \begin{list2}
-\item{Commiter, XpressEngine, 2007--2010 }
+\item{2013: ACM S3 Workshop, PC Member} 
+\end{list2}
+
+
+\section{\sc Other Activities}
+\begin{list2}
+\item{Commiter, XpressEngine (\url{http://xpressengine.org/}), 2007--2010 }
 %\begin{list1}
 %\item[] {I have contributed to many parts of XE project, which is the most popular PHP-based website building framework in South Korea.}
 %\end{list1}
@@ -230,8 +276,9 @@ Developed XML Schema Navigator (in Java), capable of dynamic XML node creation.\
 \end{list2}
 %\vspace{2in}
 \section{\sc References}
-\vspace{.05in}
-
+Available upon requests.
+%\vspace{.05in}
+\begin{comment}
 \begin{tabular}{@{}p{3in}p{3in}}
 {\bf Prof. David Wetherall} & {\bf Dr. Jaeyeon Jung} \\
 {\em Computer Science and Engineering} & \\
@@ -244,7 +291,8 @@ University of Washington & Microsoft Research \\
 {arvind@cs.washington.edu} & {matthaip@microsoft.com}
 
 \end{tabular}
-
+\end{comment}
+%\end{comment}
 %%% LIST UP WHAT DID YOU DO
 \end{resume}
 
