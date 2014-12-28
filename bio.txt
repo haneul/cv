@@ -1,7 +1,9 @@
-Seungyeop Han is a Ph.D student in the Department of Computer Science and 
-Engineering at University of Washington. His research interests are in the 
-broad area of distributed systems and computer networks, and also include 
-related topics like security and privacy. 
+Seungyeop Han is a Ph.D student in the Department of Computer Science and
+Engineering at University of Washington. His research interests are in the
+broad area of distributed systems and computer networks, and also include
+related topics like security and privacy. He has published papers in the
+premier conferences such as SIGCOMM, Ubicomp, NSDI, CCS, Usenix Security, NIPS,
+and WWW.
 He received KFAS fellowship in computer science (2010-). Prior to studying in 
 UW, he worked for Naver as a software engineer for 3 years. He received his 
 B.S. (2005) and M.S. (2007) in Computer Science from KAIST.
