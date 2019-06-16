@@ -238,6 +238,7 @@
 \def\@linename{\begingroup
   \def\\{, }
   {\namefont\@name}
+  \@jobtitle
   \vskip 2pt
   \fullline
   \vskip 2pt
@@ -284,12 +285,13 @@
 \sectionskip=4.5ex plus 1ex minus -.2ex % values stolen from LaTeX
 
 \def\newsectionwidth#1{%
-		     \sectionwidth=#1
-		     \textwidth=\resumewidth
-		     \advance\textwidth-\sectionwidth
-		     \hsize=\textwidth
-		     \hoffset=\sectionwidth
+                    \sectionwidth=#1
+                    \textwidth=\resumewidth
+                    \advance\textwidth-\sectionwidth
+                    \hsize=\textwidth
+                    \hoffset=\sectionwidth
 }
+ 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -440,7 +442,7 @@
 %    the text next to it
 %
 \let\@@section\relax
-\def\ds@overlapped{\ifx\@@section\relax\newsectionwidth{0.5in}\let
+\def\ds@overlapped{\ifx\@@section\relax\newsectionwidth{0.1in}\let
   \@@section\unboxed@sectiontitle\fi}
 \def\ds@margin{\ifx\@@section\relax\newsectionwidth{1.3in}\let
   \@@section\boxed@sectiontitle\fi}
@@ -488,6 +490,9 @@
 \def\name#1{\def\@name{#1}}
 
 \def\@name{}
+
+\def\jobtitle#1{\def\@jobtitle{#1}}
+\def\@jobtitle{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % use this to define your address, this may be called more than once.
